@@ -1,0 +1,22 @@
+.wdth{
+    margin-top:130px;
+    width: 400px;
+    float: center;
+    background-color:lightslategray;
+    border-radius: 5px;
+    padding:50px;
+}
+button{
+    margin-top:20px;
+    width:300px;
+    }
+
+    .bgdiv{
+
+        width: 600px;
+        height :450px;
+        background-color:lightslategray;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 5px
+    }

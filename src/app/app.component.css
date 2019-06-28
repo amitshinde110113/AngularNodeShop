@@ -1,0 +1,51 @@
+.nav{
+    height:60px;
+    background-color: crimson;
+   
+    }
+    .navlabel3{
+        display:inline;
+        color:white;
+        font-family: 'Gill Sans', 'Gill Sans MT';
+        font-size: 24px;
+        float: right;
+        padding:10px
+        
+     
+    }
+    .navlabel1{
+        display:inline;
+        color:white;
+        font-family: 'Gill Sans', 'Gill Sans MT'; 
+        font-size: 24px;
+        float: right;
+        padding:10px
+     
+    }
+    .navlabel2{
+        display:inline;
+        color:white;
+        font-family: 'Gill Sans', 'Gill Sans MT';
+        font-size: 24px;
+        float: right;
+        padding:10px
+        
+     
+    }
+    
+
+    .navlabel1:hover{
+        color:rgb(73, 122, 212);
+        text-shadow: 2px;
+    }
+    .navlabel2:hover{
+        color:rgb(73, 122, 212);
+        text-shadow: 2px;
+    }
+    .navlabel3:hover{
+        color:rgb(73, 122, 212);
+        text-shadow: 2px;
+    }
+    .nb{
+        float: right;
+    }

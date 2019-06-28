@@ -1,0 +1,17 @@
+.titlediv{
+
+    width:300px;
+    background-color: crimson;
+    color:white; 
+    height:60px;
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+    text-align: center;
+    font-size: 20px;
+}
+
+.smalltitle{
+
+    font-size: 21px;
+    font-family: Georgia, 'Times New Roman';
+}
