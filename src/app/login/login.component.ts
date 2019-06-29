@@ -47,10 +47,20 @@ response:any;
   
 
 this.http.post<any>("http://localhost:3000/users/login",json, httpOptions).subscribe(response=>{
+//console.log(response);
+
+
+this.response=
+  {
+    user:response.user,
+    token:response.Token
+  }
+
+this.service.set(this.response,this.response.token);
+ this.token=this.response.token;
+console.log(this.response.token);
 console.log(response);
-this.token=response.token;
-this.service.set(response); 
-if(this.token !==null)
+if(this.response.token !==null)
 {
   this.router.navigate(['userPage']);
 }

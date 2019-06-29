@@ -5,13 +5,19 @@ import { Injectable } from '@angular/core';
 })
 export class ServiceService {
   response:any;
+  token;
   constructor() { }
 
-  set(response){
+  set(response,token){
 this.response=response;
+this.token=token;
+console.log(this.token);
   }
 
-  get(){
+  getRes(){
    return this.response;
       }
+      getToken(){
+        return this.token;
+           }
 }

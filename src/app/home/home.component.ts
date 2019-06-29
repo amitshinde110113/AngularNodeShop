@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
 
 data;
   constructor(private http:HttpClient) { }
-response=[];
+response;
   ngOnInit() {
   }
 
@@ -34,10 +34,19 @@ response=[];
     var props = 'response.data';
     this.data=this.findProp(response,props,null);
     
-    this.data.map((curelement,index,arr) => {
-    this.response.push(this.data[index]);
+    this.response=this.data.map((curelement,index,arr) => {
+    
+      return{
+        name:this.data[index].name,
+        img:this.data[index].img,
+        price:this.data[index].price,
+        url:this.data[index].url,
+        id:this.data[index].id
+
+
+      }
     });
-    //console.log(this.data);
+    console.log(this.data);
     console.log(this.response);
      
       });

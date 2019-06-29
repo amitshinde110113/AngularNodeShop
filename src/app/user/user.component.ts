@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginComponent } from '../login/login.component';
 import { ServiceService } from '../service.service';
+import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-user',
@@ -10,13 +11,18 @@ import { ServiceService } from '../service.service';
 export class UserComponent implements OnInit {
   loginComponent:LoginComponent;
   constructor(private service:ServiceService) { }
-response :any="user";
+response ={
+  user:" ",
+  token:" "
+};
+tokenField="";
   ngOnInit() {
     
-
-  this.response=this.service.get();
-  //this.response ={user:'user'};
-   console.log(this.response)
+   
+  this.response=this.service.getRes();
+  this.tokenField=this.response.token;
+  console.log(this.tokenField);
+ 
   }
 
   

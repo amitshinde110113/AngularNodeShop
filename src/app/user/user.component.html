@@ -2,4 +2,11 @@
 <div class="container titlediv">
     <small>Welcome </small><br>
     <small class="smalltitle">{{response.user}}</small>
+   <form>
+    <div class="form-group">
+        <label for="my-input" style="color: black;margin-top:40px;">Your Token</label>
+        <input id="my-input" class="form-control" name="tokenField" type="text" ngModel [(ngModel)]="tokenField">
+    </div>
+</form>
+    
 </div>
